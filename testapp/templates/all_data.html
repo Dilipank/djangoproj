@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALL DATA!</title>
+    {% if graph %}
+    <p>graph is provided.</p>
+    <div style="width:600;height:500">
+    {{ graph|safe }}
+        {% else %}
+        <p>No graph is provided.</p>
+    </div>
+    {% endif %}
+</head>
+<body>
+
+</body>
+</html>
